@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "sign-up",
+			"path": "../Firebasee/vite-project/sign-up"
+		},
+		{
+			"name": "Final final final",
+			"path": "."
+		},
+		{
+			"name": "vite-project",
+			"path": "../taller final/vite-project"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "sign-up"
+	}
+}
