@@ -1,7 +1,7 @@
 import { createUser } from '../Products/firebase.js'
 
 
-const inputElements = document.querySelector('#sign-up-form').querySelectorAll('input')
+const inputElements = document.querySelector('.formulario').querySelectorAll('input')
 console.log(inputElements)
 
 const formButtom = document.getElementById('submit')

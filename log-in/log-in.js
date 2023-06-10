@@ -1,5 +1,5 @@
 /*import '../global.scss'*/
-import { createUser } from '../Products/firebase.js'
+import { createUser, signInWithUser } from '../Products/firebase.js'
 
 const buttonLogIn = document.querySelector('#button')
 buttonLogIn.addEventListener('click', () => {
@@ -7,13 +7,14 @@ buttonLogIn.addEventListener('click', () => {
     logIn()})
 
 async function logIn() {
-    const email = document.getElementById('email-input').value
-    const pass = document.getElementById('pass-input').value
+    const email = document.getElementById('email').value
+    const pass = document.getElementById("password").value
     
 
-    const userCreated = await createUser(email, pass)
-    if (userCreated.status) {
+    const userCreated = await signInWithUser(email, pass)
+    if (userCreated) {
         alert('Sesion iniciada, uid: ' + userCreated.info)
+        window.location.href = './main/index.html'
     } else {
         alert(userCreated.info)
     }

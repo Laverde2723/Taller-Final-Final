@@ -75,6 +75,19 @@ boton.addEventListener('click', () => {
 
 const openModal = document.querySelector('#carrito');
 const modal = document.querySelector('.modal');
+
+
+modal.innerHTML=`<div class="modal__container">
+<img src="imgs/modal.svg" class="modal__img">
+<h2 class="modal__title">Productos añadidos al carrito</h2>
+<p class="modal__paragraph">${product.productName}</p>
+<p class="modal__paragraph">${product.category}</p>
+<p class="modal__paragraph">${product.price}</p>
+<p class="modal__paragraph">Talla L</p>
+
+<a href="#" class="modal__close">Cerrar carrito</a>
+</div>`
+
 const closeModal = document.querySelector('.modal__close');
 
 openModal.addEventListener('click', (e)=>{

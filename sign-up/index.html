@@ -10,21 +10,21 @@
 </head>
 <body>
 
-    <from class="formulario">
+    <form class="formulario">
 
         <h1>Sign-Up</h1>
         <div class="container">
             <div class="input-contenedor">
                 <i class="fa-solid fa-user icon"></i>
-            <input type="text" placeholder="Nombre Completo">
+            <input type="text"  name="nombre" placeholder="Nombre Completo">
             </div>
             <div class="input-contenedor">
                 <i class="fa-solid fa-envelope icon"></i>
-            <input type="text" placeholder="Email">
+            <input type="text"  name="email" placeholder="Email">
             </div>
             <div class="input-contenedor">
                 <i class="fa-solid fa-lock icon"></i>
-            <input type="password" placeholder="contraseña">
+            <input type="password"  name="pass" placeholder="contraseña">
             </div>
             <div class="input-contenedor">
                 <i class="fa-solid fa-lock icon"></i>
@@ -39,13 +39,13 @@
                 <input type="file" name="picture" id="picture-input" accept="image/*">
             </div>
             <a href="../main/index.html">
-                <input type="submit" value="Sign-Up" class="button">
+                <input type="submit" value="Sign-Up" class="button" id="submit">
             </a>
             <p1>Al registrarte aceptas nuestras Condiciones de uso y Politica de privacidad</p1>
             <p2>¿Ya tienes una cuenta? <a href="/index.html" class="link">Login</a></p2>
 
         </div>
-    </from>
+    </form>
         
 
 

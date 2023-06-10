@@ -1,6 +1,6 @@
 let categoria1 = document.getElementById("categoria1")
 
-/*categoria1.addEventListener("mouseover", e=>{
+categoria1.addEventListener("mouseover", e=>{
     categoria1.src="./Imag/modelo1-2.png"
 
 })
@@ -33,5 +33,5 @@ categoria3.addEventListener("mouseleave", e=>{
     
 })
 
-app.post()*/
+app.post()
 
